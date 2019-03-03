@@ -1,0 +1,30 @@
+{
+  "name": "eslint-plugin-redux-reselect",
+  "description": "Eslint rules for reduxjs/reselect",
+  "version": "0.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/viktor-ku/eslint-plugin-redux-reselect.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslint-plugin",
+    "redux",
+    "reselect",
+    "eslint-plugin-reselect",
+    "eslint-plugin-redux-reselect",
+    "redux-reselect"
+  ],
+  "author": "Viktor Ku <viktor.konsta@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/viktor-ku/eslint-plugin-redux-reselect/issues"
+  },
+  "homepage": "https://github.com/viktor-ku/eslint-plugin-redux-reselect",
+  "devDependencies": {
+    "eslint": "^5.15.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0"
+  }
+}
