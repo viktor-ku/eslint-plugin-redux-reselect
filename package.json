@@ -1,7 +1,7 @@
 {
   "name": "eslint-plugin-redux-reselect",
   "description": "Eslint rules for reduxjs/reselect",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "main": "index.js",
   "repository": {
     "type": "git",
