@@ -25,6 +25,11 @@
   "devDependencies": {
     "eslint": "^5.15.0",
     "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.16.0"
+    "eslint-plugin-import": "^2.16.0",
+    "jest": "^24.3.0",
+    "sinon": "^7.2.7"
+  },
+  "scripts": {
+    "test": "jest"
   }
 }
