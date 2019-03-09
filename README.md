@@ -30,22 +30,6 @@ const fooSelector = () => createSelector();
 const fooSelector = createSelector();
 ```
 
-### `redux-reselect/name-ends-with-selector`
-
-Enforces selector variable name to end with `Selector` in its name.
-
-**incorrect:**
-
-```js
-const apples = createSelector();
-```
-
-**correct:**
-
-```js
-const applesSelector = createSelector();
-```
-
 ### `redux-reselect/prefer-selector-ref`
 
 Enforces passing other selectors references into `createSelector` function
@@ -65,4 +49,23 @@ const booksSelector = createSelector(
 ```js
 const usersSelector = createSelector(...);
 const booksSelector = createSelector(usersSelector, ...);
+```
+
+### `redux-reselect/format-selector-name`
+
+1. Selector variable name should end with `Selector`
+2. Nothing like `makeSelect`, `select` or `selector` at the start is allowed
+
+**incorrect:**
+
+```js
+const apples = createSelector();
+const makeSelectBooks = createSelector();
+```
+
+**correct:**
+
+```js
+const applesSelector = createSelector();
+const booksSelector = createSelector();
 ```
