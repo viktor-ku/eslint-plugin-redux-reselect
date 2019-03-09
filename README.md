@@ -46,22 +46,6 @@ const apples = createSelector();
 const applesSelector = createSelector();
 ```
 
-### `redux-reselect/no-make-select`
-
-Very specific rule in case you've used higher order function to wrap your selector and called it with `makeSelect` in its name.
-
-**incorrect:**
-
-```js
-const makeSelectBooks = () => createSelector();
-```
-
-**correct:**
-
-```js
-const applesSelector = createSelector();
-```
-
 ### `redux-reselect/prefer-selector-ref`
 
 Enforces passing other selectors references into `createSelector` function
