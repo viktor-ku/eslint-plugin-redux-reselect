@@ -51,6 +51,17 @@ const usersSelector = createSelector(...);
 const booksSelector = createSelector(usersSelector, ...);
 ```
 
+### `redux-reselect/selector-args-type`
+
+Enforces passing other selectors into `createSelector` function either by one `array` argument containing selectors, or by passing all of the selectors directly to a function (`args`)
+
+You should specify either of the following options in the eslint config
+
+1. `array`
+2. `args`
+
+e.g. `redux-reselect/selector-args-type: [1, "array"]`
+
 ### `redux-reselect/format-selector-name`
 
 1. Selector variable name should end with `Selector`
