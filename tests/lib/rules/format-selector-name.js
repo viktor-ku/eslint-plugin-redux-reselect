@@ -6,6 +6,19 @@ const { VariableDeclarator } = require('../../../lib/ast/VariableDeclarator');
 const { ArrayExpression } = require('../../../lib/ast/ArrayExpression');
 
 describe('format-selector-name', () => {
+  it('ignore if init is null', () => {
+    const report = sinon.fake();
+    const match = rule.create({ report });
+    const node = VariableDeclarator({
+      id: Identifier({ name: 'userSelector' }),
+      init: null,
+    });
+
+    match.VariableDeclarator(node);
+
+    expect(report.callCount).toBe(0);
+  });
+
   it('ignore if init is not a CallExpression', () => {
     const report = sinon.fake();
     const match = rule.create({ report });
