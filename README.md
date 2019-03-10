@@ -12,7 +12,7 @@ npm i -D eslint-plugin-redux-reselect
 
 ## Rules
 
-Currently has 4 simple rules, but **more** will come shortly.
+Currently has a few simple rules:
 
 ### `redux-reselect/assign-selector-to-variable`
 
